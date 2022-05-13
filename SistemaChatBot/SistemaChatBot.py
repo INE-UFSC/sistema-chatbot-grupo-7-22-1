@@ -33,7 +33,7 @@ class SistemaChatBot:
 
     def mostra_menu(self):
         print("Os chatbots disponíveis são:")
-        for i, bot in enumerate(self.lista_bots()):
+        for i, bot in enumerate(self.lista_bots):
             print(i, "- Bot:", bot.nome)
 
     
@@ -49,8 +49,8 @@ class SistemaChatBot:
     def le_envia_comando(self):
         ##faz a entrada de dados do usuário e executa o comando no bot ativo
         cmd = input("Digite o comando desejado (-1 para sair):")
-            if cmd=="-1":
-                return True 
+        if cmd=="-1":
+            return True 
         self.bot.executa_comando(cmd)
 
     def inicio(self):
