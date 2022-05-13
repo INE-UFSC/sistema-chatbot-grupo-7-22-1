@@ -4,7 +4,7 @@ from Bots.Bot import Bot
 class BotTriste(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta}
+        self.__comandos = {"1": self.boas_vindas(), "2": self.r_nome(), "3":self.pergunta()}
 
     #nao esquecer o decorator
     def r_nome(self):

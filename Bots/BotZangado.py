@@ -4,7 +4,7 @@ from Bots.Bot import Bot
 class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta}
+        self.__comandos = {"1": self.boas_vindas(), "2": self.r_nome(), "3":self.pergunta()}
 
 
     def r_nome(self):
@@ -36,7 +36,7 @@ class BotZangado(Bot):
         return MensagemDespedida
 
     def pergunta(self):
-        MensagemPergunta = "Não te interessa!!! pergunta pra tua mãee n/ espero que você nunca mais apareça por aqui"
+        MensagemPergunta = "Não te interessa!!! pergunta pra tua mãee \n espero que você nunca mais apareça por aqui"
         return MensagemPergunta
 
     
