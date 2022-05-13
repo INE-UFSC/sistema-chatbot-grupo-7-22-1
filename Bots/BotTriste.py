@@ -4,6 +4,7 @@ from Bots.Bot import Bot
 class BotTriste(Bot):
     def __init__(self,nome):
         self.__nome = nome
+        self.__comandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta, "4":self.despedida}
 
     #nao esquecer o decorator
     def r_nome(self):
@@ -24,8 +25,8 @@ class BotTriste(Bot):
 
 
     def executa_comando(self,cmd):
-        DicionariodeComandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta, "4":self.despedida}
-        return DicionariodeComandos.get(cmd)
+        return self.__comandos.get(cmd)
+
 
     def boas_vindas(self):
         MensagemBom = "O Dia ta tão chuvoso hoje, ainda bem que você chegou :c, eu tava muito sozinho ...\n Você não vai embora né?"

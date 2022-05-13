@@ -4,13 +4,13 @@ from Bots.Bot import Bot
 class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
+        self.__comandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta, "4":self.despedida}
 
-    #nao esquecer o decorator
+
     def r_nome(self):
         MensagemNome = "Eu sou o bot {} >:( ".format(self.__nome)
         return MensagemNome
 
-    #nao esquecer o decorator
     def set_nome(self,nome):
         self.__nome = nome
     
@@ -24,8 +24,8 @@ class BotZangado(Bot):
 
 
     def executa_comando(self,cmd):
-        DicionariodeComandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta, "4":self.despedida}
-        return DicionariodeComandos.get(cmd)
+        return self.__comandos.get(cmd)
+
 
     def boas_vindas(self):
         MensagemBom = "Que bom dia o que ta na disney porra \n Você vai embora né não aguenta a pressão?"
