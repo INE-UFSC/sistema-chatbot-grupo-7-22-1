@@ -33,7 +33,7 @@ class SistemaChatBot:
 
     def mostra_menu(self):
         print("Os chatbots disponíveis são:")
-        for i, bot in enumerate(self.lista_bots()):
+        for i, bot in enumerate(self.lista_bots):
             print(i, "- Bot:", bot.nome)
 
     
