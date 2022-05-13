@@ -49,8 +49,8 @@ class SistemaChatBot:
     def le_envia_comando(self):
         ##faz a entrada de dados do usuário e executa o comando no bot ativo
         cmd = input("Digite o comando desejado (-1 para sair):")
-            if cmd=="-1":
-                return True 
+        if cmd=="-1":
+            return True 
         self.bot.executa_comando(cmd)
 
     def inicio(self):
