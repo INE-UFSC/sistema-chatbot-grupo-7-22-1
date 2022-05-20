@@ -6,7 +6,7 @@ class Bot(ABC):
     def __init__(self, nome):
         self.__nome = nome
         self.comandos = {}
-
+## Deixa privado
     @property
     def nome(self):
         return self.__nome

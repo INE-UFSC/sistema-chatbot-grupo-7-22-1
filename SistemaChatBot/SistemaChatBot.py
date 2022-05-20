@@ -34,10 +34,11 @@ class SistemaChatBot:
     def mostra_menu(self):
         print("Os chatbots disponíveis são:")
         for i, bot in enumerate(self.lista_bots):
-            print(i, "- Bot:", bot.nome)
+            print(f"{i}/, - Bot:, {bot.nome} : {bot.apresentacao()}")
     
     def escolhe_bot(self):
         ##faz a entrada de dados do usuário e atribui o objeto ao atributo __bot 
+        #adicionar try except
         i = int(input("Digite com qual chat bot deseja conversar:"))
         self.bot = self.__lista_bots[i]
 
