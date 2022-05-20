@@ -19,13 +19,9 @@ class BotZangado(Bot):
     def apresentacao(self):
         MensagemApresenta = "Acho que eu sou obrigado a te ajudar >:("
         return MensagemApresenta
-    def mostra_comandos(self):
-        pass
-
 
     def executa_comando(self,cmd):
         return self.__comandos.get(cmd)
-
 
     def boas_vindas(self):
         MensagemBom = "Que bom dia o que ta na disney porra \n Você vai embora né não aguenta a pressão?"

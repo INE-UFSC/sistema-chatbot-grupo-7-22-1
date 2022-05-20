@@ -4,8 +4,8 @@ import random as r
 
 class Bot(ABC):
     def __init__(self, nome):
-        self.nome = nome
-        self.comandos = {}
+        self.__nome = nome
+        self.__comandos = {}
 
     @property
     def nome(self):
@@ -17,8 +17,9 @@ class Bot(ABC):
 
     def mostra_comandos(self):
         cmds = ''
-        for i, cmd in enumerate(self.__comandos):
-            cmds.join([i+1,'-',self.__comandos[cmd][0],'\n'])
+        for cmd in sorted(self.__comandos):
+            cmds.join([cmd,'-',self.__comandos[cmd][0],'\n'])
+        print(cmds)
         return cmds
 
 
