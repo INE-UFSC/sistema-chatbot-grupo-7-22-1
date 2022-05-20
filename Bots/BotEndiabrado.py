@@ -1,9 +1,9 @@
 from Bots.Bot import Bot
 
-class BotZangado(Bot):
+class BotEndiabrado(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"1": self.boas_vindas, "2": self.r_nome, "3":self.pergunta, "5":self.despedida, "4": self.pacto} 
+        self.__comandos = {"1": self.boas_vindas(), "2": self.r_nome(), "3":self.pergunta(), "5":self.despedida(), "4": self.pacto()} 
 
     #nao esquecer o decorator
     def r_nome(self):
@@ -11,7 +11,7 @@ class BotZangado(Bot):
         return MensagemNome
 
     #nao esquecer o decorator
-    def set_nome(self,nome):
+    def set_nome(self, nome):
         self.__nome = nome
     
     nome = property(r_nome,set_nome)
@@ -20,7 +20,7 @@ class BotZangado(Bot):
         MensagemApresenta = "Ora, um belo humano, bem vindo"
         return MensagemApresenta
     def mostra_comandos(self):
-        return "1 - Bom Dia, senhor bot!!! \n2 - Qual seu Nome, criatura? \n3 - Por que você está agindo assim? \n4 - O que você poderia me oferecer? \n5 - *Leaves*"
+        return "1 - Bom Dia, senhor bot!!! \n2 - Qual seu Nome, criatura? \n3 - Por que você está agindo assim? \n4 - O que você poderia me oferecer?"
 
 
     def executa_comando(self,cmd):
