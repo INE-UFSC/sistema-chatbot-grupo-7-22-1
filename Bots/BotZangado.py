@@ -4,6 +4,7 @@ from Bots.Bot import Bot
 class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
+        super().__init__(nome)
         self.__comandos = {1:("Bom Dia! bot!!!", self.boas_vindas()), 2:("Qual seu Nome, meu querido?", self.r_nome()), 3:("Por que você está tão zangado?",self.pergunta())}
 
 

@@ -2,6 +2,7 @@ from Bots.Bot import Bot
 
 class BotEndiabrado(Bot):
     def __init__(self,nome):
+        super().__init__(nome)
         self.__nome = nome
         self.__comandos = {1:("Bom Dia, senhor bot!!!", self.boas_vindas()),2:("Qual seu Nome, criatura?", self.r_nome()),3: ("Por que você está agindo assim?",self.pergunta()),5:("Cansei de você tchau",self.despedida()),4: ("O que você poderia me oferecer?", self.pacto())} 
 
