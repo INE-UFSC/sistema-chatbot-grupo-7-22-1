@@ -18,9 +18,10 @@ class Bot(ABC):
         self.__nome = nome
 
     def mostra_comandos(self):
+        cmds = ''
         for i, cmd in enumerate(self.__comandos):
-            print(i+1,'-',self.__comandos[cmd][0])
-        pass
+            cmds.join([i+1,'-',self.__comandos[cmd][0],'\n'])
+        return cmds
 
     @abstractmethod
     def executa_comando(self,cmd):
