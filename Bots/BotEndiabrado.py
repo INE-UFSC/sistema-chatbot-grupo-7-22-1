@@ -3,7 +3,7 @@ from Bots.Bot import Bot
 class BotEndiabrado(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"Bom Dia, senhor bot!!!": self.boas_vindas(), "Qual seu Nome, criatura?": self.r_nome(), "Por que você está agindo assim?":self.pergunta(), "Cansei de você tchau":self.despedida(), "O que você poderia me oferecer?": self.pacto()} 
+        self.__comandos = {1:("Bom Dia, senhor bot!!!", self.boas_vindas()),2:("Qual seu Nome, criatura?", self.r_nome()),3: ("Por que você está agindo assim?",self.pergunta()),5:("Cansei de você tchau",self.despedida()),4: ("O que você poderia me oferecer?", self.pacto())} 
 
     #nao esquecer o decorator
     def r_nome(self):
