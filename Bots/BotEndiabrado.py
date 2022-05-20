@@ -20,7 +20,7 @@ class BotEndiabrado(Bot):
         MensagemApresenta = "Ora, um belo humano, bem vindo"
         return MensagemApresenta
     def mostra_comandos(self):
-        return "1 - Bom Dia, senhor bot!!! \n2 - Qual seu Nome, criatura? \n3 - Por que você está agindo assim? \n4 - O que você poderia me oferecer?"
+        pass
 
 
     def executa_comando(self,cmd):

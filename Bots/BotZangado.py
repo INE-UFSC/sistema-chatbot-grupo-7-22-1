@@ -20,7 +20,7 @@ class BotZangado(Bot):
         MensagemApresenta = "Acho que eu sou obrigado a te ajudar >:("
         return MensagemApresenta
     def mostra_comandos(self):
-        return "1 -  \n2 -  \n3 - Por que você está tão zangado? \n"
+        pass
 
 
     def executa_comando(self,cmd):

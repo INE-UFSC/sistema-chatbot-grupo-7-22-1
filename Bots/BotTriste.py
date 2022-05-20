@@ -21,7 +21,7 @@ class BotTriste(Bot):
         MensagemApresenta = "Você não devia ter me escolhido, eu sou inutil :c"
         return MensagemApresenta
     def mostra_comandos(self):
-        return "1 - Bom Dia \n2 - Qual seu Nome? \n3 - Por que você está depressivo? \n"
+        pass
 
 
     def executa_comando(self,cmd):
