@@ -1,28 +1,27 @@
-##implemente as seguintes classes
 
+  
 from abc import ABC, abstractmethod
 import random as r
 
 class Bot(ABC):
-
-    def __init__(nome,):
+    def __init__(self, nome):
         self.nome = nome
         self.comandos = {}
 
-    #nao esquecer o decorator
+    @property
     def nome(self):
-        pass
+        return self.__nome
 
-    #nao esquecer o decorator
-    def nome(nome):
-        pass
+    @nome.setter
+    def nome(self, nome:str):
+        self.__nome = nome
 
     def mostra_comandos(self):
-        pass
+        for index, chave in enumerate(self.comandos):
+            print(f'{index+1} | {self.comandos[chave][0]}')
 
-    @abstractmethod
-    def executa_comando(self,cmd):
-        pass
+    def executa_comando(self,cmd:str):
+        return self.comandos[cmd][1]
 
     @abstractmethod
     def boas_vindas():
