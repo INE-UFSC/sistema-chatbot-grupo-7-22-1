@@ -5,24 +5,18 @@ class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
         super().__init__(nome)
-        self.__comandos = {1:("Bom Dia! bot!!!", self.boas_vindas()), 2:("Qual seu Nome, meu querido?", self.r_nome()), 3:("Por que você está tão zangado?",self.pergunta())}
+        self.comandos = {'1':("Bom Dia! bot!!!", self.boas_vindas()), 
+                         '2':("Qual seu Nome, meu querido?", self.r_nome()), 
+                         '3':("Por que você está tão zangado?",self.pergunta())}
 
 
     def r_nome(self):
         MensagemNome = "Eu sou o bot {} >:( ".format(self.__nome)
         return MensagemNome
 
-    def set_nome(self,nome):
-        self.__nome = nome
-    
-    nome = property(r_nome,set_nome)
-
     def apresentacao(self):
         MensagemApresenta = "Acho que eu sou obrigado a te ajudar >:("
         return MensagemApresenta
-
-    def executa_comando(self,cmd):
-        return self.__comandos.get(cmd)
 
     def boas_vindas(self):
         MensagemBom = "Que bom dia o que ta na disney porra \n Você vai embora né não aguenta a pressão?"
