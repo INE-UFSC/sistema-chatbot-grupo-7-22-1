@@ -50,7 +50,9 @@ class SistemaChatBot:
         cmd = input("Digite o comando desejado (-1 para sair):")
         if cmd=="-1":
             return True 
+        print("\n")
         print(self.bot.executa_comando(cmd))
+        print("\n")
         zeta = input("Aperte Enter para continuar")
 
     def inicio(self):
