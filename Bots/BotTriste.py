@@ -4,7 +4,7 @@ from Bots.Bot import Bot
 class BotTriste(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"1": self.boas_vindas(), "2": self.r_nome(), "3":self.pergunta()}
+        self.__comandos = {"Bom Dia": self.boas_vindas(), "Qual seu Nome?": self.r_nome(), "Por que você está depressivo?":self.pergunta()}
 
     #nao esquecer o decorator
     def r_nome(self):
@@ -21,7 +21,7 @@ class BotTriste(Bot):
         MensagemApresenta = "Você não devia ter me escolhido, eu sou inutil :c"
         return MensagemApresenta
     def mostra_comandos(self):
-        return "1 - Bom Dia \n2 - Qual seu Nome? \n3 - Por que você está depressivo? \n"
+        pass
 
 
     def executa_comando(self,cmd):
