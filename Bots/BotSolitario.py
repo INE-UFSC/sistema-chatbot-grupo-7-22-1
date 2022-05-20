@@ -15,7 +15,7 @@ class BotSolitario(Bot):
 
     #nao esquecer o decorator
     @nome.setter
-    def nome(nome):
+    def nome(self,nome):
         self.__nome = nome
 
     def apresentacao(self):

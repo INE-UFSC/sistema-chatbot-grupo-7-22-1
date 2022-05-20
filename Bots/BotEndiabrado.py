@@ -3,7 +3,7 @@ from Bots.Bot import Bot
 class BotEndiabrado(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"Bom Dia, senhor bot!!!": self.boas_vindas(), "Qual seu Nome, criatura?": self.r_nome(), "Por que você está agindo assim?":self.pergunta(), "Canseu de você tchau":self.despedida(), "O que você poderia me oferecer?"": self.pacto()"} 
+        self.__comandos = {"Bom Dia, senhor bot!!!": self.boas_vindas(), "Qual seu Nome, criatura?": self.r_nome(), "Por que você está agindo assim?":self.pergunta(), "Cansei de você tchau":self.despedida(), "O que você poderia me oferecer?": self.pacto()} 
 
     #nao esquecer o decorator
     def r_nome(self):
@@ -19,6 +19,7 @@ class BotEndiabrado(Bot):
     def apresentacao(self):
         MensagemApresenta = "Ora, um belo humano, bem vindo"
         return MensagemApresenta
+
     def mostra_comandos(self):
         pass
 
