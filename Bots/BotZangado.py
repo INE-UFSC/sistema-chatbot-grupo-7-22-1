@@ -4,7 +4,7 @@ from Bots.Bot import Bot
 class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = {"1": self.boas_vindas(), "2": self.r_nome(), "3":self.pergunta()}
+        self.__comandos = {"Bom Dia! bot!!!": self.boas_vindas(), "Qual seu Nome, meu querido?": self.r_nome(), "Por que você está tão zangado?":self.pergunta()}
 
 
     def r_nome(self):
@@ -20,7 +20,7 @@ class BotZangado(Bot):
         MensagemApresenta = "Acho que eu sou obrigado a te ajudar >:("
         return MensagemApresenta
     def mostra_comandos(self):
-        return "1 - Bom Dia! bot!!! \n2 - Qual seu Nome, meu querido? \n3 - Por que você está tão zangado? \n"
+        return "1 -  \n2 -  \n3 - Por que você está tão zangado? \n"
 
 
     def executa_comando(self,cmd):
