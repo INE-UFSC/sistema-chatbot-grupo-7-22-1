@@ -4,6 +4,7 @@ class BotCachorro(Bot):
     def __init__(self, nome):
         super().__init__(nome)
         self.__nome = nome
+        self.comandos = {}
         self.comandos['1'] = ("Bom dia!", "Woof Woof")
         self.comandos['2'] = ("Senta", "[Theo sentou]")
         self.comandos['3'] = ("Qual o seu brinquedo favorito?", "Woof Woof")

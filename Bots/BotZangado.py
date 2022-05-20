@@ -15,19 +15,19 @@ class BotZangado(Bot):
         return MensagemNome
 
     def apresentacao(self):
-        MensagemApresenta = "Acho que eu sou obrigado a te ajudar >:("
+        MensagemApresenta = "\nAcho que eu sou obrigado a te ajudar >:(\n"
         return MensagemApresenta
 
     def boas_vindas(self):
-        MensagemBom = "Que bom dia o que ta na disney porra \n Você vai embora né não aguenta a pressão?"
+        MensagemBom = "\nQue bom dia o que ta na disney porra \n Você vai embora né não aguenta a pressão?\n"
         return MensagemBom
 
     def despedida(self):
-        MensagemDespedida = "Até que enfim, não aguntava mais a sua presença"
+        MensagemDespedida = "\nAté que enfim, não aguntava mais a sua presença\n"
         return MensagemDespedida
 
     def pergunta(self):
-        MensagemPergunta = "Não te interessa!!! pergunta pra tua mãee \n espero que você nunca mais apareça por aqui"
+        MensagemPergunta = "\nNão te interessa!!! pergunta pra tua mãee \n espero que você nunca mais apareça por aqui\n"
         return MensagemPergunta
 
     

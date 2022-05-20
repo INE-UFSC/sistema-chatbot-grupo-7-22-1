@@ -51,6 +51,7 @@ class SistemaChatBot:
         if cmd=="-1":
             return True 
         print(self.bot.executa_comando(cmd))
+        zeta = input("Aperte Enter para continuar")
 
     def inicio(self):
         pass
